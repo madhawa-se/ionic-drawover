@@ -96,7 +96,7 @@ import java.util.Date;
          params_head_float = new WindowManager.LayoutParams(
                  WindowManager.LayoutParams.WRAP_CONTENT,
                  WindowManager.LayoutParams.WRAP_CONTENT,
-                 WindowManager.LayoutParams.TYPE_PHONE,
+                 WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY ,
                  WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
                  PixelFormat.TRANSLUCENT);
          params_head_float.gravity = Gravity.CENTER_VERTICAL | Gravity.RIGHT;
@@ -104,7 +104,7 @@ import java.util.Date;
          params_head_view = new WindowManager.LayoutParams();
          params_head_view.width = WindowManager.LayoutParams.WRAP_CONTENT;
          params_head_view.height = WindowManager.LayoutParams.WRAP_CONTENT;
-         params_head_view.type = WindowManager.LayoutParams.TYPE_PHONE;
+         params_head_view.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY ;
          params_head_view.format = PixelFormat.TRANSLUCENT;
                 
          adjustWebViewGravity();
@@ -215,13 +215,13 @@ import java.util.Date;
              params_key_dispature = new WindowManager.LayoutParams(
                      WindowManager.LayoutParams.WRAP_CONTENT,
                      WindowManager.LayoutParams.WRAP_CONTENT,
-                     WindowManager.LayoutParams.TYPE_PHONE,
+                     WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY ,
                      WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
                      PixelFormat.TRANSLUCENT);
              params_key_dispature.gravity = Gravity.CENTER;
 
              //This one is necessary.
-             params_key_dispature.type = WindowManager.LayoutParams.TYPE_PHONE;
+             params_key_dispature.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY ;
              // Play around with these two.
              params_key_dispature.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL;
              //ll_lp.flags = ll_lp.flags | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
